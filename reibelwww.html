@@ -1,0 +1,14 @@
+<template name="reibelwww">
+  <head>
+    <title>The Reibel: MIT Media Lab application</title>
+  </head>
+
+  <body>
+    {{#if currentUser}}
+      {{> main }}
+    {{else}}
+      {{> landing }}
+    {{/if}}
+
+  </body>
+</template>

@@ -1,0 +1,43 @@
+html {
+  height: 100%;
+}
+html body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.ui-masthead {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.ui-masthead-container {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+[class^="ui-masthead-landing-"],
+[class*=" ui-masthead-landing-"] {
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+}
+
+.ui-masthead-landing-1 {
+  background-image: url(/images/bg.jpg);
+  color: white;
+}
+.ui-masthead-landing-1 .ui-masthead-container {
+  background: rgba(0,0,0,0.55);
+}
+
+.ui-masthead-landing-2 {
+  background-image: url(/images/bg.jpg);
+  color: white;
+}
+
+#login-sign-in-link{
+  color: white
+}

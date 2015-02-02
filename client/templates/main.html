@@ -1,0 +1,12 @@
+<template name="main">
+    {{#if applicationOn}}
+      {{> jobApplication}}
+    {{else}}
+      {{> gameBackground}}
+    {{/if}}
+  <br/>
+  <br/>
+  <button type="button" class="btn btn-sm btn-primary startOn">Back to the start</button>
+  <button type="button" class="btn btn-sm btn-danger applicationOn">To the formal application</button>
+  <button type="button" class="btn btn-sm btn-success gameon">Play The Reibel Game</button>
+</template>

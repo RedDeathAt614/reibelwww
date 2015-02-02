@@ -1,0 +1,38 @@
+<template name="game">
+  <div class="anti-modal-box">
+    <div class="anti-modal-body">
+      {{> loginButtons }}
+      This is the game.<br/>
+      <br/>
+      {{#if gameStart}}
+        Hi, my name is Michael Reibel Boesen and I will be your future Assistant Professor.<br/>
+        <br/>
+        To understand why, you first have to win The Reibel game. If you for some reason hate games you can go to the somewhat more formal part of my application by clicking <a href="#" class="applicationOn">here</a>. But I doubt that you would do that. Knowing as you come from a place with research groups such as Lifelong Kindergarten etc. <br/>
+        To begin the game press this button:<br/>
+        <br/>
+        <button type="button" class="btn btn-lg btn-success nextQuestion">Start game</button>
+      {{else}}
+        {{#if gameDone}}
+          Thank you for playing The Reibel game. I hope you now understand why I'm your future Assistant Professor.<br/>
+          <br/>
+          Your score was: {{score}}% <br/>
+          <br/>
+          <button type="button" class="btn btn-sm btn-danger applicationOn">Continue to the formal part</button>
+        {{else }}
+          {{getQuestion.text}}
+          {{#each getAnswers}}
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="option-{{answerNr}}" value="option1" checked>
+                {{text}}
+              </label>
+            </div>
+          {{/each}}
+
+          <button type="button" class="btn btn-lg btn-success nextQuestion">Next question</button>
+        {{/if}}
+      {{/if}}
+    </div>
+  </div>
+
+</template>
