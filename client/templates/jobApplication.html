@@ -9,7 +9,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Reibel</a>
+        <a class="navbar-brand" href="#" id="none">Reibel</a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -18,29 +18,60 @@
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Projects <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
-              <li><a href="#">Bio-inspired self-repairing chips (2007-2014ish)</a></li>
-              <li><a href="#">Community building (2011-2015)</a></li>
-              <li><a href="#">Web startup playground (2014)</a></li>
-              <li><a href="#">Drone (2015)</a></li>
+              <li><a href="#" id="biomicore">Bio-inspired self-repairing chips (2007-2014ish)</a></li>
+              <li><a href="#" id="cphftw">Community building (2011-2015)</a></li>
+              <li><a href="#" id="kollektiv">Web startup playground (2014)</a></li>
+              <li><a href="#" id="drone">Drone (2015)</a></li>
             </ul>
           </li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Artistic <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
-              <li><a href="#">Band: The Reibels (2010-2012 + 2014-2015)</a></li>
-              <li><a href="#">Photography (2015)</a></li>
+              <li><a href="#" id="reibels">Band: The Reibels (2010-2012 + 2014-2015)</a></li>
+              <li><a href="#" id="photography">Photography (2015)</a></li>
             </ul>
           </li>
           <li><a href="#">The 'why'</a></li>
           <li><a href="#">Media</a></li>
-          <li><a href="#">Real-time</a></li>
-          <li><a href="#">CV</a></li>
+          <li><a href="#" id="realtime">Real-time</a></li>
+          <li><a href="#" id="cv">CV</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li>{{> loginButtons }}</li>
         </ul>
       </div><!-- /.navbar-collapse -->
-      <div id="my-timeline"></div>
+      {{#if none}}
+        <!--div id="my-timeline"></div-->
+        <div id="my-timeline"></div>
+      {{else}}
+        {{#if biomicore}}
+          This is Biomicore
+        {{/if}}
+        {{#if cphftw}}
+          This is cphftw
+        {{/if}}
+        {{#if kollektiv}}
+          This is Kollektiv
+        {{/if}}
+        {{#if drone}}
+          This is Drone
+        {{/if}}
+        {{#if reibels}}
+          This is Reibel
+        {{/if}}
+        {{#if photography}}
+          This is photography
+        {{/if}}
+        {{#if media}}
+          This is media
+        {{/if}}
+        {{#if realtime}}
+          This is realtime
+        {{/if}}
+        {{#if cv}}
+          This is cv
+        {{/if}}
+      {{/if}}
     </div><!-- /.container-fluid -->
   </nav>
 </template>
