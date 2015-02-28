@@ -22,44 +22,48 @@
             <li>{{> loginButtons }}</li>
           </ul>
         </div><!-- /.navbar-collapse -->
-        <div class="feature">
-        {{#if none}}
-          <!--div id="my-timeline"></div-->
-          <div id="my-timeline"></div>
-        {{else}}
-          {{#if biomicore}}
-            This is Biomicore
-          {{/if}}
-          {{#if cphftw}}
-            This is cphftw
-          {{/if}}
-          {{#if kollektiv}}
-            This is Kollektiv
-          {{/if}}
-          {{#if drone}}
-            This is Drone
-          {{/if}}
-          {{#if reibels}}
-            This is Reibel
-          {{/if}}
-          {{#if photography}}
-            This is photography
-          {{/if}}
-          {{#if media}}
-            This is media
-          {{/if}}
-          {{#if realtime}}
-            This is realtime
-          {{/if}}
-          {{#if cv}}
-            This is cv
-          {{/if}}
-        {{/if}}
-      </div>
     </div><!-- /.container-fluid -->
   </nav>
+  <div class="container-fluid">
+    <div class="feature">
+    {{#if none}}
+      <!--div id="my-timeline"></div-->
+      <div id="my-timeline"></div>
+      <button type='button' class='btn btn-sm btn-success next pull-right'>Next feature</button>
+      <a href="#off">Jump to #foo on page.html</a>
+    {{else}}
+      {{#if biomicore}}
+        This is Biomicore
+      {{/if}}
+      {{#if cphftw}}
+        This is cphftw
+      {{/if}}
+      {{#if kollektiv}}
+        This is Kollektiv
+      {{/if}}
+      {{#if drone}}
+        This is Drone
+      {{/if}}
+      {{#if reibels}}
+        This is Reibel
+      {{/if}}
+      {{#if photography}}
+        This is photography
+      {{/if}}
+      {{#if media}}
+        This is media
+      {{/if}}
+      {{#if realtime}}
+        This is realtime
+      {{/if}}
+      {{#if cv}}
+        This is cv
+      {{/if}}
+    {{/if}}
+  </div>
+  </div>
   <!-- Below main feature-->
-  <div class="container marketing offscreen">
+  <div class="container marketing offscreen" id="off">
 
       <!-- Three columns of text below the carousel -->
     <div class="row">

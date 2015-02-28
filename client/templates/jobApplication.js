@@ -51,6 +51,10 @@ Template.jobApplication.helpers({
 });
 
 Template.jobApplication.events({
+  "click .next": function(event){
+    console.log("HAI HAI");
+    sessionSet("biomicore");
+  },
   "click #biomicore": function(event){
     sessionSet(event.target.id);
   },
@@ -247,7 +251,7 @@ var createTimeline = function(){
   "startDate":"2014,11",
   "endDate":"2015,3,15",
   "headline":"Photography",
-  "text":"<p>I've always been fascinated by really skilled wildlife photographers. So I decided to become one. Bought a Nikon d5300 and a Nikkor 70-300 4.5-5.6G IF-ED lens. So now I'm good to go. Work so far can be found <a href='https://500px.com/reibel'>here</a></p>",
+  "text":"<p>I've always been fascinated by really skilled wildlife photographers. So I decided to become one. Bought a Nikon d5300 and a Nikkor 70-300 4.5-5.6G IF-ED lens. So now I'm good to go. Work so far can be found <a href='https://500px.com/reibel'>here</a></p><br/><br/><button type='button' class='btn btn-sm btn-success next'>Play The Reibel Game</button>",
   "tag":"Inventive",
   //"classname":"optionaluniqueclassnamecanbeaddedhere",
   "asset": {
