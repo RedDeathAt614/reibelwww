@@ -28,31 +28,34 @@
     <div class="feature">
     {{#if none}}
       <!--div id="my-timeline"></div-->
-      <div id="my-timeline"></div>
+      {{> timeline}}
     {{else}}
       {{#if biomicore}}
         {{> biomicoreMain}}
       {{/if}}
       {{#if cphftw}}
         This is cphftw
+        {{> cphftwMain}}
       {{/if}}
       {{#if kollektiv}}
         This is Kollektiv
+        {{> kollektivMain}}
       {{/if}}
-      {{#if drone}}
-        This is Drone
+      {{#if mothership}}
+        This is Mothership
+        {{> mothershipMain}}
       {{/if}}
-      {{#if reibels}}
-        This is Reibel
-      {{/if}}
-      {{#if photography}}
-        This is photography
+      {{#if creative}}
+        This is Reibels & photography
+        {{> creativeMain}}
       {{/if}}
       {{#if media}}
         This is media
+        {{> mediaMain}}
       {{/if}}
       {{#if realtime}}
         This is realtime
+        {{> realtimeMain}}
       {{/if}}
       {{#if cv}}
         This is cv
@@ -130,28 +133,31 @@
       <!-- /END THE FEATURETTES -->
     {{else}}
       {{#if biomicore}}
-      {{> biomicoreFeatures}}
+        {{> biomicoreFeatures}}
       {{/if}}
       {{#if cphftw}}
         This is cphftw
+        {{> cphftwFeatures}}
       {{/if}}
       {{#if kollektiv}}
         This is Kollektiv
+        {{> kollektivFeatures}}
       {{/if}}
-      {{#if drone}}
-        This is Drone
+      {{#if mothership}}
+        This is Mothership
+        {{> mothershipFeatures}}
       {{/if}}
-      {{#if reibels}}
-        This is Reibel
-      {{/if}}
-      {{#if photography}}
-        This is photography
+      {{#if creative}}
+        This is Reibel & photography
+        {{> creativeFeatures}}
       {{/if}}
       {{#if media}}
         This is media
+        {{> mediaFeatures}}
       {{/if}}
       {{#if realtime}}
         This is realtime
+        {{> realtimeFeatures}}
       {{/if}}
       {{#if cv}}
         This is cv
