@@ -6,3 +6,20 @@
 #my-timeline{
   margin-bottom: 300px;
 }
+
+#biomicore-background{
+  background-image: url("images/biomicore.jpg");
+  background-size:   cover;                      /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;            /* optionally, center the image */
+  height: 100%;
+}
+
+.navbar{
+  margin-bottom: 0px;
+}
+
+.container-fluid{
+  padding-right: 0px;
+  padding-left: 0px;
+}
