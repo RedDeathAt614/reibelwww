@@ -26,6 +26,9 @@ Template.jobApplication.helpers({
   cphftw: function(){
     return testSession("cphftw");
   },
+  university: function(){
+    return testSession("university");
+  },
   kollektiv: function(){
     return testSession("kollektiv");
   },
@@ -52,6 +55,9 @@ Template.jobApplication.events({
       sessionSet("biomicore");
     }
     else if (testSession("biomicore")){
+      sessionSet("university");
+    }
+    else if (testSession("university")){
       sessionSet("cphftw");
     }
     else if (testSession("cphftw")){
